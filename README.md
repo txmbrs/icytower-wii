@@ -1,3 +1,5 @@
+
+
 # Icy Tower Wii
 
 An enhanced homebrew port of the iconic 2001 PC platformer **Icy Tower** for the **Nintendo Wii** (and vWii on Wii U), featuring full controller support, customizable Tower Mods, custom character skin loading.
@@ -17,6 +19,8 @@ An enhanced homebrew port of the iconic 2001 PC platformer **Icy Tower** for the
 - Experimental 2-player split-screen mode!! (grab a friend and race up the tower) 
 
 <img width="1154" height="756" alt="image" src="https://github.com/user-attachments/assets/46eb554d-c743-437c-9599-50b94e7767b8" />
+
+<img width="572" height="369" alt="ezgif-18ccc1fc5466e073" src="https://github.com/user-attachments/assets/7e715ff6-4736-4e5f-97dc-df4a483216da" />
 
 
 ## Requirements
