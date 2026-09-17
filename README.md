@@ -1,4 +1,4 @@
-﻿# Icy Tower Wii
+# Icy Tower Wii
 
 An enhanced homebrew port of the iconic 2001 PC platformer **Icy Tower** for the **Nintendo Wii** (and vWii on Wii U), featuring full controller support, customizable Tower Mods, custom character skin loading, and buttery-smooth 60 FPS gameplay.
 
@@ -7,19 +7,13 @@ An enhanced homebrew port of the iconic 2001 PC platformer **Icy Tower** for the
 ## Features
 
 - **Tower Mods Engine**: Completely transform the tower's atmosphere, platform textures, walls, background, and UI on the fly via the Options menu.
-  - **Hollow Knight**: Gothic Hallownest wrought-iron openwork bridges, Greenpath lumafly cavern mist, organic shell architecture, custom Soul Gauge combo meter, and The Knight character.
-  - **Minecraft**: Authentic block platforms (grass, stone, obsidian, netherite), cobblestone walls, and skybox.
-  - **Cyberneon**: Glowing neon retrowave synth aesthetic with laser railings and dark cyber towers.
-  - **Matrix**: Digital green data-stream cascade.
-- **Custom Character System**:
-  - Play with built-in bonus characters: **Fall Guy** (Fall Guys) and **Impostor** (Among Us), complete with custom voice clips, sound effects, and music.
   - Easily drop your own community character skins into `sd:/apps/icytower/characters/`.
 - **Comprehensive Controller Support**:
   - **Wii Remote** (held sideways with D-Pad + 2/1, or upright with A)
   - **Wii Remote + Nunchuk**
   - **Classic Controller / Classic Controller Pro**
   - **GameCube Controller** (with automatic disconnected port filtering and debounce protection)
-- **Fluid Arcade Performance**: Rock-solid 60 FPS physics faithfully matching the original PC game mechanics.
+
 
 ---
 
@@ -51,11 +45,6 @@ An enhanced homebrew port of the iconic 2001 PC platformer **Icy Tower** for the
    - Ensure `floor01.bmp` through `floor27.bmp`, `sideblock.bmp`, `bgtile.bmp`, fonts, and the `harold/` folder are placed inside `sd:/apps/icytower/gfx/`.
 3. Copy all sound files (`.wav`) from the PC game's `sfx` directory into `sd:/apps/icytower/sfx/`.
 
-### Step 3: Play!
-- Insert the SD card into your Wii or Wii U.
-- Launch the **Homebrew Channel**, select **Icy Tower**, and start climbing!
-- *(Optional)* For **Dolphin Emulator**, simply open `apps/icytower/boot.dol` directly or place the folder into your Dolphin SD sync path (`Load/WiiSDSync/apps/icytower/`).
-
 ---
 
 ## Controls
@@ -76,8 +65,6 @@ An enhanced homebrew port of the iconic 2001 PC platformer **Icy Tower** for the
 Place any Icy Tower custom character folder into `sd:/apps/icytower/characters/`:
 ```
 sd:/apps/icytower/characters/
-├── fallguy/
-├── impost/
 └── YourCharacter/
     ├── character.txt
     ├── character.bmp
