@@ -2,8 +2,6 @@
 
 A homebrew port of the classic 2001 platformer Icy Tower for the Nintendo Wii and Wii U vWii.
 
-This project includes Wii controller support, custom character support, and a Tower Mods system for changing the look and feel of the game.
-
 > [!WARNING]
 > This repository does not include the original Icy Tower graphics and sound files. You must provide them from a legally obtained copy of the original PC game.
 
@@ -13,11 +11,11 @@ This project includes Wii controller support, custom character support, and a To
 - Wii Remote, Nunchuk, Classic Controller, and GameCube Controller support
 - Custom character skins
 - Custom tower themes and visual mods
-- Homebrew app package ready for SD card installation
+- Support PNG and MP3 files 
 
 ## Requirements
 
-- Nintendo Wii or Wii U in vWii mode
+- Nintendo Wii or Wii U in vWii mode, Dolphin
 - SD card
 - Homebrew Channel
 - A legal copy of the original PC version of Icy Tower
@@ -62,12 +60,6 @@ gfx/
 ├── harold/
 └── ...
 ```
-
-### 3. Launch it
-
-1. Insert the SD card into the Wii.
-2. Open the Homebrew Channel.
-3. Start `Icy Tower`.
 
 ## Controls
 
@@ -122,23 +114,6 @@ mods/
 
 Activate the mod from the in-game options menu.
 
-## Repository Structure
-
-```text
-.
-├── apps/
-│   └── icytower/
-│       ├── boot.dol
-│       ├── meta.xml
-│       ├── icon.png
-│       ├── splash.png
-│       ├── characters/
-│       ├── gfx/
-│       ├── mods/
-│       └── sfx/
-├── README.md
-└── .gitignore
-```
 
 ## Credits
 
@@ -147,6 +122,6 @@ Activate the mod from the in-game options menu.
 
 ## Disclaimer
 
-This project is an unofficial homebrew port and is not affiliated with, endorsed by, or sponsored by the original copyright holders.
+This project is an unofficial homebrew port and is not affiliated with, endorsed by, or sponsored by the original copyright holders. Created only for testing purpose.
 
 Do not distribute copyrighted game assets without permission.
