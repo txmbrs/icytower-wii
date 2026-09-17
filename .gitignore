@@ -1,0 +1,10 @@
+# System files
+.DS_Store
+Thumbs.db
+*.tmp
+*.bak
+
+# Game runtime data
+scores.dat
+replay_*.dat
+*.sav

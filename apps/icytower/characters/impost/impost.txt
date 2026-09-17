@@ -1,0 +1,17 @@
+Impostor character for Icy Tower.
+
+Have fun!
+
+# graphics
+[frames] 		impost.bmp
+	
+# sound
+[jumplo] 		susy.wav  
+[jumpmed]          susy.wav
+[jumphi]	 	round.wav   
+[pause] 	 	susy.wav
+[death]			lose.wav   
+[greeting]		ho.wav   
+[edge]			ho.wav
+[bgmusic]		bgmusic.wav
+
