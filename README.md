@@ -12,7 +12,12 @@ An enhanced homebrew port of the iconic 2001 PC platformer **Icy Tower** for the
 - Wii Remote, Nunchuk, Classic Controller, and GameCube Controller support
 - Custom character skins
 - Custom tower themes and visual mods
+- Multiple game modes (Classic, Speedrun, Zen Training)
 - Support PNG and MP3 files 
+- Experimental 2-player split-screen mode!! (grab a friend and race up the tower) 
+
+<img width="1154" height="756" alt="image" src="https://github.com/user-attachments/assets/46eb554d-c743-437c-9599-50b94e7767b8" />
+
 
 ## Requirements
 
