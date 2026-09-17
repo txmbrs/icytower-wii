@@ -1,6 +1,7 @@
 # Icy Tower Wii
 
-A homebrew port of the classic 2001 platformer Icy Tower for the Nintendo Wii and Wii U vWii.
+An enhanced homebrew port of the iconic 2001 PC platformer **Icy Tower** for the **Nintendo Wii** (and vWii on Wii U), featuring full controller support, customizable Tower Mods, custom character skin loading.
+
 
 > [!WARNING]
 > This repository does not include the original Icy Tower graphics and sound files. You must provide them from a legally obtained copy of the original PC game.
