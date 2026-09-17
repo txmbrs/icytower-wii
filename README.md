@@ -1,84 +1,152 @@
 # Icy Tower Wii
 
-An enhanced homebrew port of the iconic 2001 PC platformer **Icy Tower** for the **Nintendo Wii** (and vWii on Wii U), featuring full controller support, customizable Tower Mods, custom character skin loading, and buttery-smooth 60 FPS gameplay.
+A homebrew port of the classic 2001 platformer Icy Tower for the Nintendo Wii and Wii U vWii.
 
----
+This project includes Wii controller support, custom character support, and a Tower Mods system for changing the look and feel of the game.
+
+> [!WARNING]
+> This repository does not include the original Icy Tower graphics and sound files. You must provide them from a legally obtained copy of the original PC game.
 
 ## Features
 
-- **Tower Mods Engine**: Completely transform the tower's atmosphere, platform textures, walls, background, and UI on the fly via the Options menu.
-  - Easily drop your own community character skins into `sd:/apps/icytower/characters/`.
-- **Comprehensive Controller Support**:
-  - **Wii Remote** (held sideways with D-Pad + 2/1, or upright with A)
-  - **Wii Remote + Nunchuk**
-  - **Classic Controller / Classic Controller Pro**
-  - **GameCube Controller** (with automatic disconnected port filtering and debounce protection)
+- Wii and vWii support
+- Wii Remote, Nunchuk, Classic Controller, and GameCube Controller support
+- Custom character skins
+- Custom tower themes and visual mods
+- Homebrew app package ready for SD card installation
 
+## Requirements
 
----
+- Nintendo Wii or Wii U in vWii mode
+- SD card
+- Homebrew Channel
+- A legal copy of the original PC version of Icy Tower
 
-## Installation Guide
+## Installation
 
-> [!NOTE]
-> Due to copyright reasons, this repository contains the homebrew engine, custom characters, and tower mods, but **does not distribute the original PC base game graphics and sound effects**. You must provide these files from your own legal copy of Icy Tower for PC (v1.3, v1.4, or v1.5).
+### 1. Copy the app to your SD card
 
-### Step 1: Copy to SD Card
-1. Download or clone this repository.
-2. Copy the `apps` folder to the root of your SD card:
-   ```
-   sd:/
-   └── apps/
-       └── icytower/
-           ├── boot.dol
-           ├── meta.xml
-           ├── icon.png
-           ├── splash.png
-           ├── characters/
-           ├── gfx/
-           ├── mods/
-           └── sfx/
-   ```
+Clone or download this repository, then copy the `apps` folder to the root of your SD card:
 
-### Step 2: Supply Base Game Assets
-1. On your PC, navigate to your installed copy of Icy Tower.
-2. Copy all `.bmp` files from the PC game's `gfx` directory into `sd:/apps/icytower/gfx/`.
-   - Ensure `floor01.bmp` through `floor27.bmp`, `sideblock.bmp`, `bgtile.bmp`, fonts, and the `harold/` folder are placed inside `sd:/apps/icytower/gfx/`.
-3. Copy all sound files (`.wav`) from the PC game's `sfx` directory into `sd:/apps/icytower/sfx/`.
+```text
+sd:/
+└── apps/
+    └── icytower/
+        ├── boot.dol
+        ├── meta.xml
+        ├── icon.png
+        ├── splash.png
+        ├── characters/
+        ├── gfx/
+        ├── mods/
+        └── sfx/
+```
 
----
+### 2. Add the original game assets
+
+From your original PC installation of Icy Tower:
+
+- Copy the required `.bmp` files into `sd:/apps/icytower/gfx/`
+- Copy the required `.wav` files into `sd:/apps/icytower/sfx/`
+
+This project expects the standard original game files such as:
+
+```text
+gfx/
+├── floor01.bmp
+├── floor02.bmp
+├── ...
+├── floor27.bmp
+├── sideblock.bmp
+├── bgtile.bmp
+├── harold/
+└── ...
+```
+
+### 3. Launch it
+
+1. Insert the SD card into the Wii.
+2. Open the Homebrew Channel.
+3. Start `Icy Tower`.
 
 ## Controls
 
-| Action | Wii Remote (Horizontal) | GameCube Controller | Classic Controller |
-| :--- | :--- | :--- | :--- |
-| **Move Left / Right** | D-Pad Left / Right | Control Stick / D-Pad | D-Pad / Left Stick |
-| **Jump** | **2** or **A** | **A** / **X** / **Y** | **b** / **a** |
-| **Pause / In-Game Menu** | **+** (Plus) or **Home** | **Start** | **+** (Plus) / **Home** |
-| **Menu Select** | **2** or **A** | **A** | **a** |
-| **Menu Back / Cancel** | **1** or **B** | **B** | **b** |
+| Action | Wii Remote | GameCube | Classic Controller |
+| --- | --- | --- | --- |
+| Move left/right | D-Pad | Stick/D-Pad | Stick/D-Pad |
+| Jump | 2 or A | A / X / Y | A / B |
+| Pause/Menu | + or Home | Start | + or Home |
+| Select | 2 or A | A | A |
+| Back/Cancel | 1 or B | B | B |
 
----
+## Custom Characters
 
-## Modding & Customization
+Place character folders in:
 
-### Adding Custom Character Skins
-Place any Icy Tower custom character folder into `sd:/apps/icytower/characters/`:
-```
+```text
 sd:/apps/icytower/characters/
-└── YourCharacter/
+```
+
+Example:
+
+```text
+characters/
+└── MyCharacter/
     ├── character.txt
     ├── character.bmp
-    └── sounds...
+    └── sounds/
 ```
-Navigate to **Game Options -> Character** in the main menu to select and play as your custom hero.
 
-### Creating Tower Mods
-To create or install a new Tower Mod:
-1. Create a directory: `sd:/apps/icytower/mods/<ModName>/gfx/`.
-2. Add your custom textures:
-   - `floor01.png` - `floor27.png`: Platform pieces (`floor01` = left cap 21x37, `floor02` = center loop 16x37, `floor03` = right cap 21x37). Full 32-bit RGBA transparency is supported!
-   - `sideblock.png`: Tower wall texture (132x124, vertically seamless).
-   - `bgtile.png`: Background texture (546x128, vertically seamless).
-   - `combo_meter.png`, `combo_liquid.png`, `combo_count.png`: Combo meter UI.
-   - `harold/`: Optional theme-specific character sprites (idle, walk, jump, etc.).
-3. In the main menu, go to **Options -> Tower Mod** and switch to your mod.
+Then open the in-game options menu and select the character.
+
+## Tower Mods
+
+Mods are placed in:
+
+```text
+sd:/apps/icytower/mods/
+```
+
+Each mod can include custom textures for platforms, walls, backgrounds, and UI elements. Example:
+
+```text
+mods/
+└── MyMod/
+    └── gfx/
+        ├── floor01.png
+        ├── floor02.png
+        ├── sideblock.png
+        ├── bgtile.png
+        └── combo_meter.png
+```
+
+Activate the mod from the in-game options menu.
+
+## Repository Structure
+
+```text
+.
+├── apps/
+│   └── icytower/
+│       ├── boot.dol
+│       ├── meta.xml
+│       ├── icon.png
+│       ├── splash.png
+│       ├── characters/
+│       ├── gfx/
+│       ├── mods/
+│       └── sfx/
+├── README.md
+└── .gitignore
+```
+
+## Credits
+
+- Original game: Icy Tower by Free Lunch Design
+- Wii port and enhancements: txmbrs
+
+## Disclaimer
+
+This project is an unofficial homebrew port and is not affiliated with, endorsed by, or sponsored by the original copyright holders.
+
+Do not distribute copyrighted game assets without permission.
